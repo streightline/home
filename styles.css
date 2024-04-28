@@ -55,3 +55,23 @@ body, html {
   font-weight: bold; /* Texto em negrito */
   font-family: Arial Black, Arial, sans-serif; /* Fonte Arial Black */
 }
+
+body {
+  background-color: #0D1117; /* Cor de fundo para todas as páginas */
+  color: #FFFFFF; /* Cor do texto em branco */
+}
+
+.motivacao {
+  padding: 50px 0;
+}
+
+.motivacao .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.motivacao h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
