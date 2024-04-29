@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Home </title>
+<title>Home</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +19,12 @@
         <li><a href="https://streightline.github.io/galeria/">Galeria</a></li>
       </ul>
     </nav>
+    <!-- Botão do menu de gaveta -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </div>
 </header>
 
@@ -40,7 +46,7 @@
   </div>
 </section>
 
-  <footer class="footer">
+<footer class="footer">
   <a href="https://streightline.github.io/politicas-de-privacidade/" style="color: #0000FF;">Políticas e Privacidade</a><br><br>
   
   Contato: <a href="https://criarmeulink.com.br/u/1714356389" style="color: #0000FF;">(21) 96706-2078</a><br>  
@@ -48,6 +54,14 @@
   CNPJ: 20.309.729/0001-51 <br>
     © Copyright 2024 Str8Line. Todos os direitos reservados
 </footer>
+
+<!-- Script para controlar o menu de gaveta -->
+<script>
+function toggleMenu() {
+  var menuMobile = document.querySelector('.menu-mobile');
+  menuMobile.classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
