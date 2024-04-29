@@ -1,8 +1,10 @@
+/* Reset CSS */
 body, html {
   margin: 0;
   padding: 0;
 }
 
+/* Estilos do banner */
 .banner {
   position: relative;
   width: 100%;
@@ -21,9 +23,10 @@ body, html {
   align-items: center;
 }
 
-.banner img {
+.banner-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir todo o contêiner */
 }
 
 .menu {
@@ -51,24 +54,21 @@ body, html {
 .menu ul li a {
   text-decoration: none;
   color: #45FF36; /* Cor do texto */
-  font-size: 25px; /* Tamanho da fonte aumentado em 50% */
+  font-size: 35px; /* Tamanho da fonte aumentado em 50% */
   font-weight: bold; /* Texto em negrito */
   font-family: Arial Black, Arial, sans-serif; /* Fonte Arial Black */
 }
 
-body {
-  background-color: #0D1117; /* Cor de fundo para todas as páginas */
-  color: #FFFFFF; /* Cor do texto em branco */
-}
-
+/* Estilos da seção de motivação */
 .motivacao {
   padding: 50px 0;
+  background-color: #171717; /* Fundo escuro */
+  color: #FFFFFF; /* Cor do texto branco */
 }
 
-.motivacao .container {
+.container {
   max-width: 800px;
   margin: 0 auto;
-  text-align: justify; /* Texto justificado */
 }
 
 .motivacao h2 {
@@ -77,63 +77,51 @@ body {
   text-align: center; /* Título centralizado */
 }
 
+.motivacao p {
+  font-size: 20px; /* Tamanho da fonte aumentado */
+  text-align: justify; /* Texto justificado */
+}
+
+/* Estilos para o botão do WhatsApp */
 .whatsapp-btn {
   display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
-  margin-top: 20px; /* Espaçamento superior */
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 600px) {
-  .banner {
-    height: 200px;
-  }
-  .menu {
-    display: none;
-  }
-  .menu-mobile {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .menu-mobile ul li {
-    margin-bottom: 10px;
-  }
-}
-
-/* Estilos para o menu de gaveta e botão do menu */
-.menu-mobile {
-  display: none;
-}
-
-.menu-btn {
-  display: block;
-  text-align: center;
+  justify-content: center; /* Centraliza o botão horizontalmente */
   margin-top: 20px;
 }
 
-.menu-btn img {
-  width: 30px;
+.whatsapp-btn img {
+  width: 240px; /* Aumenta a largura da imagem em 40% */
   height: auto;
 }
 
-.menu-mobile ul {
-  list-style-type: none;
-  padding: 0;
+/* Estilos para a versão mobile */
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 200px; /* Reduz a altura do banner */
+  }
+
+  .menu {
+    display: none; /* Esconde o menu horizontal */
+  }
+
+  .menu-mobile {
+    display: block; /* Exibe o menu de gaveta */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .menu-mobile ul li {
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens do menu */
+  }
+
+   /* Estilos para o botão do WhatsApp */
+.whatsapp-btn {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  margin-top: 20px;
 }
 
-.menu-mobile ul li {
-  margin-bottom: 10px;
-}
-
-.menu-mobile ul li a {
-  text-decoration: none;
-  color: #45FF36;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: Arial Black, Arial, sans-serif;
+.whatsapp-btn img {
+  width: 240px; /* Aumenta a largura da imagem em 40% */
+  height: auto;
 }
