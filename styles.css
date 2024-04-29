@@ -94,6 +94,18 @@ body, html {
   height: auto;
 }
 
+/* Estilos para o rodapé */
+.footer {
+  background-color: #000; /* Cor de fundo do rodapé preto */
+  color: #fff; /* Cor do texto do rodapé branco */
+  padding: 10px 0 30px; /* 30px de espaço abaixo do rodapé */
+  text-align: center;
+}
+
+.footer a {
+  color: #0000FF; /* Cor dos links no rodapé azul */
+}
+
 /* Estilos para a versão mobile */
 @media screen and (max-width: 600px) {
   .banner {
@@ -114,24 +126,27 @@ body, html {
     margin-bottom: 10px; /* Adiciona espaçamento entre os itens do menu */
   }
 
-   /* Estilos para o botão do WhatsApp */
-.whatsapp-btn {
-  display: flex;
-  justify-content: center; /* Centraliza o botão horizontalmente */
-  margin-top: 20px;
-}
+  /* Estilos para o botão do WhatsApp na versão mobile */
+  .whatsapp-btn {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-top: 20px;
+  }
 
-.whatsapp-btn img {
-  width: 240px; /* Aumenta a largura da imagem em 40% */
-  height: auto;
-}
-.footer {
-  background-color: #000; /* Cor de fundo do rodapé preto */
-  color: #fff; /* Cor do texto do rodapé branco */
-  padding: 10px 0 30px; /* 30px de espaço abaixo do rodapé */
-  text-align: center;
-}
+  .whatsapp-btn img {
+    width: 160px; /* Ajusta a largura da imagem do botão do WhatsApp */
+    height: auto;
+  }
 
-.footer a {
-  color: #0000FF; /* Cor dos links no rodapé azul */
+  /* Estilos para o rodapé na versão mobile */
+  .footer {
+    background-color: #000; /* Cor de fundo do rodapé preto */
+    color: #fff; /* Cor do texto do rodapé branco */
+    padding: 10px 0 30px; /* 30px de espaço abaixo do rodapé */
+    text-align: center;
+  }
+
+  .footer a {
+    color: #0000FF; /* Cor dos links no rodapé azul */
+  }
 }
