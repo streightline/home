@@ -125,3 +125,13 @@ body, html {
   width: 240px; /* Aumenta a largura da imagem em 40% */
   height: auto;
 }
+.footer {
+  background-color: #000; /* Cor de fundo do rodapé preto */
+  color: #fff; /* Cor do texto do rodapé branco */
+  padding: 10px 0 30px; /* 30px de espaço abaixo do rodapé */
+  text-align: center;
+}
+
+.footer a {
+  color: #0000FF; /* Cor dos links no rodapé azul */
+}
