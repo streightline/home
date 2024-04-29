@@ -51,7 +51,7 @@ body, html {
 .menu ul li a {
   text-decoration: none;
   color: #45FF36; /* Cor do texto */
-  font-size: 30px; /* Tamanho da fonte aumentado em 50% */
+  font-size: 25px; /* Tamanho da fonte aumentado em 50% */
   font-weight: bold; /* Texto em negrito */
   font-family: Arial Black, Arial, sans-serif; /* Fonte Arial Black */
 }
@@ -68,10 +68,72 @@ body {
 .motivacao .container {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify; /* Texto justificado */
 }
 
 .motivacao h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center; /* Título centralizado */
+}
+
+.whatsapp-btn {
+  display: flex;
+  justify-content: center; /* Centralizar horizontalmente */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 200px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .menu-mobile ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para o menu de gaveta e botão do menu */
+.menu-mobile {
+  display: none;
+}
+
+.menu-btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-btn img {
+  width: 30px;
+  height: auto;
+}
+
+.menu-mobile ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-mobile ul li {
+  margin-bottom: 10px;
+}
+
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: #45FF36;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial Black, Arial, sans-serif;
 }
